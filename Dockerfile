@@ -82,6 +82,7 @@ RUN if [ "${TESTS:-true}" = true ]; then \
     /usr/local/bin/valheim-plus-updater \
     /usr/local/bin/bepinex-updater \
     /usr/local/share/valheim/contrib/*.sh \
+    || true \
     ; \
     fi
 WORKDIR /
