@@ -8,7 +8,7 @@ ARG GO_VERSION=1.24.1
 
 RUN apt-get update
 RUN apt-get -y install apt-utils
-RUN apt-get -y install build-essential curl git python3 python3-pip shellcheck
+RUN apt-get -y install build-essential curl git python3 python3-pip python3-venv shellcheck
 
 # Install Go 1.24 manually
 RUN curl -L -o /tmp/go${GO_VERSION}.linux-amd64.tar.gz https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz \
