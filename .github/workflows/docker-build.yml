@@ -124,8 +124,8 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ghcr.io/lloesche/valheim-server
-            lloesche/valheim-server
+            ghcr.io/thecodacus/valheim-server
+            codacus/valheim-server
           tags: |
             type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
             type=raw,value=dev,enable=${{ github.ref == 'refs/heads/dev' }}
